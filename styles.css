@@ -1,0 +1,30 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.background-blue {
+    background-color: #00148B;
+}
+.title-font {
+    color: #F1BB31; font-size: 41.73px
+}
+
+.curved-background {
+    background-color: #00148B;;
+
+    height: 100%;
+    clip-path: ellipse(100% 100% at 50% 0);
+}
+.w-150 {
+    width: 150px;
+}
+@media (max-width: 600px)     {
+    .title-font {
+        color: #F1BB31;
+        font-size: 26px
+    }
+}
