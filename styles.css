@@ -33,3 +33,6 @@ body, html {
         font-size: 26px
     }
 }
+.rounded-xxl{
+    border-radius: 15px;
+}
