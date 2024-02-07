@@ -12,21 +12,24 @@
     <!-- Include Lottie library from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body>
 
     <body>
-        <nav
-            class=" bg-primary flex  px-5 lg:px-[11%] md:px-[6%]  xl:px-none  md:pt-5 lg:pt-10 pt-5  flex justify-center items-center">
-            <div class="container flex justify-between items-center">
+
+
+        <div class="px-[10%] bg-primary flex flex-col sm:flex-col md:flex-col items-center pt-5 lg:pt-10 ">
+            <div class="flex items-center  container justify-between ">
                 <img src="assets/logo-home.svg" alt="Logo" class="h-6 md:h-5 lg:h-8">
                 <button class="flex md:hidden text-white focus:outline-none lg:hidden toggle-button">
                     <img src="assets/toggler.svg" alt="Toggle">
                 </button>
+
                 <ul
-                    class="hidden md:flex md:items-center md:w-auto space-x-4 md:space-x-4 lg:space-x-8 lg:justify-center md:justify-center  lg:text-[15px]">
+                    class="hidden md:flex md:items-center md:w-auto space-x-4 md:space-x-4 lg:space-x-8 lg:justify-center md:justify-center lg:text-[15px]">
 
                     <li class="flex"><a href="#"
                             class="text-white hover:text-gray-300 font-rubik font-bold transition-colors duration-300 text-[15px] lg:text-[15px] md:text-[9px]">Programmes</a>
@@ -144,77 +147,69 @@
 
                 </div>
             </div>
-        </nav>
+            <div
+                class="nav-menu fixed top-0 left-0  bg-primary flex-col justify-left z-10 lg:hidden hidden justify-between p-5 h-screen w-screen">
+                <div class="flex flex-col  text-white  space-y-6">
+                    <div class="flex items-center justify-between">
+                        <button class="text-white text-3xl focus:outline-none lg:hidden toggle-button-toggled-menu">
+                            <img src="assets/toggler.svg" alt="Toggle h-4">
+                        </button>
+                        <img src="assets/logo-home.svg" alt="Logo" class="h-6">
 
-
-
-
-        <div
-            class="nav-menu fixed top-0 left-0  bg-primary flex-col justify-left z-10 lg:hidden hidden justify-between p-5 h-screen w-screen">
-            <div class="flex flex-col  text-white  space-y-6">
-                <div class="flex items-center justify-between">
-                    <button class="text-white text-3xl focus:outline-none lg:hidden toggle-button-toggled-menu">
-                        <img src="assets/toggler.svg" alt="Toggle h-4">
-                    </button>
-                    <img src="assets/logo-home.svg" alt="Logo" class="h-6">
-
-                </div>
-                <nav class="flex flex-col space-y-4 justify-between text-center">
-                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                        Programmes
-                    </a>
-                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                        Points De Vente
-                    </a>
-                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                        Matières Scolaires
-                    </a>
-                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                        Blog
-                    </a>
-                    <div
-                        class="flex justify-between items-center text-[15px] text-center py-2 border-b border-white toggle-item">
-                        <a href="#" class="block" rel="ugc">
-                            À propos de la société
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-white h-4 w-4">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
                     </div>
+                    <nav class="flex flex-col space-y-4 justify-between text-center">
+                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                            Programmes
+                        </a>
+                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                            Points De Vente
+                        </a>
+                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                            Matières Scolaires
+                        </a>
+                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                            Blog
+                        </a>
+                        <div
+                            class="flex justify-between items-center text-[15px] text-center py-2 border-b border-white toggle-item">
+                            <a href="#" class="block" rel="ugc">
+                                À propos de la société
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-white h-4 w-4">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </div>
 
-                    <a href="#" class=" text-center block py-2 border-b border-white hidden text-[15px]" rel="ugc"
-                        id="conditions">
-                        Conditions d'utilisation
-                    </a>
-                    <a href="#" class="text-center block py-2 hidden transition-max-height text-[15px]" rel="ugc"
-                        id="confidentialite">
-                        Politique de confidentialité
-                    </a>
-                </nav>
-                <div class="lg:hidden w-full  justify-center">
-                    <button
-                        class="border-solid border-2 border-sky-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-[15px] rounded-full my-2 mr-5 text-sm w-full">
-                        Inscription gratuite
-                    </button>
-                    <button
-                        class="border-solid border-2 border-bg-customBlue  hover:bg-primary text-white font-bold py-2 px-4 rounded-full my-2 mr-5 text-sm w-full">
-                        Se connecter
-                    </button>
+                        <a href="#" class=" text-center block py-2 border-b border-white hidden text-[15px]" rel="ugc"
+                            id="conditions">
+                            Conditions d'utilisation
+                        </a>
+                        <a href="#" class="text-center block py-2 hidden transition-max-height text-[15px]" rel="ugc"
+                            id="confidentialite">
+                            Politique de confidentialité
+                        </a>
+                    </nav>
+                    <div class="lg:hidden w-full  justify-center">
+                        <button
+                            class="border-solid border-2 border-sky-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-[15px] rounded-full my-2 mr-5 text-sm w-full">
+                            Inscription gratuite
+                        </button>
+                        <button
+                            class="border-solid border-2 border-bg-customBlue  hover:bg-primary text-white font-bold py-2 px-4 rounded-full my-2 mr-5 text-sm w-full">
+                            Se connecter
+                        </button>
 
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="bg-primary flex flex-col sm:flex-col md:flex-col items-center md:space-x-8 xs lg:px-[10%]   ">
 
             <div class=" flex  flex-col sm:flex-col md:flex-col items-center  lg:my-5">
                 <div
                     class="flex  flex-col lg:flex-row md:flex-row items-center lg:px-2 lg:justify-between md:justify-center  ">
                     <div
-                        class="flex md:w-[38%] lg:w-[38%] text-center justify-center md:justify-center md:text-left flex-col space-y-5">
+                        class=" md:w-[38%] lg:w-[38%] text-center flex justify-center md:flex md:justify-left lg:justify-left space-x-2 px-3 md:text-left flex-col space-y-5 ">
 
                         <div class="flex flex-col space-y-2 mt-5 ">
                             <span class="font-bold title-font md:text-[24px] lg:text-[41px] text-[36px]">
@@ -228,7 +223,7 @@
                                 avancés et de développer la passion. L'apprentissage de votre enfant
                             </p>
                         </div>
-                        <div class="flex justify-center space-x-2 px-3">
+                        <div class="hidden md:flex space-x-4">
                             <button
                                 class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-xs">
                                 Inscription gratuite
@@ -238,6 +233,7 @@
                                 Se connecter
                             </button>
                         </div>
+
                     </div>
                     <div class="md:w-1/2">
                         <dotlottie-player src="https://lottie.host/26a39330-3fca-41ae-8db3-4b022f2174ee/XRdioyR6zw.json"
@@ -273,17 +269,169 @@
                 </defs>
             </svg>
         </div>
+        <section class="flex justify-center w-screen">
+
+            <div class=" lg:px-[8%] hidden md:container md:flex md:flex-col ">
+                <div class="text-center mb-12">
+                    <h1 class="text-3xl font-bold text-[#333333] mb-2">Un enseignement ludique, efficace et
+                        approfondi
+                    </h1>
+                    <p class="text-[#555555]">Cinq raisons de choisir la plateforme Education atome</p>
+                </div>
+                <div class="flex justify-left items-center mb-6 bg-customGray rounded-lg p-5">
+                    <div class="text-left">
+                        <div class="bg-white w-fit rounded-full my-2">
+                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
+                        </div>
+                        <p class="text-[#555555] mb-6">Des cours complets et détaillés, reconstruisant les notions de
+                            base pour votre enfant, même s'il n'a pas compris dans la section et ne manque pas, pour
+                            qu'il ne manque de rien.</p>
+
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 mb-12 ">
+                    <div class="bg-customBlue p-4 rounded-lg  flex-col flex items-center">
+                        <div class="bg-white w-fit rounded-full my-2">
+                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-white text-center">
+                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
+                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                lecture.
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="bg-customRed p-4 rounded-lg  flex-col flex items-center">
+                        <div class="bg-white w-fit rounded-full my-2">
+                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-white text-center">
+                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
+                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                lecture.
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="bg-customPurple p-4 rounded-lg  flex-col flex items-center">
+                        <div class="bg-white w-fit rounded-full my-2">
+                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-white text-center">
+                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
+                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                lecture.
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="bg-primary p-4 rounded-lg  flex-col flex items-center">
+                        <div class="bg-white w-fit rounded-full my-2">
+                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-white text-center">
+                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
+                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                lecture.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="splide flex w-full h-fit p-3 md:hidden">
+            <div class="splide__track">
+                <ul class="splide__list p-5">
+                    <li class="splide__slide bg-blue-300">
+                        <div class="bg-customBlue rounded-lg  flex-col flex items-center">
+                            <div class="bg-white w-fit rounded-full my-2">
+                                <p class=" text-lg font-bold   p-3 text-black flex ">La raison gfsdf</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-white text-center">
+                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne
+                                    et
+                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps
+                                    pendant la
+                                    lecture.
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="splide__slide bg-green-300">
+                        <div class="bg-customBlue p-4 rounded-lg  flex-col flex items-center">
+                            <div class="bg-white w-fit rounded-full my-2">
+                                <p class=" text-lg font-bold   p-3 text-black flex ">La raison praaaaemier</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-white text-center">
+                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne
+                                    et
+                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps
+                                    pendant la
+                                    lecture.
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="splide__slide bg-yellow-300">
+                        <div class="bg-customBlue p-4 rounded-lg  flex-col flex items-center">
+                            <div class="bg-white w-fit rounded-full my-2">
+                                <p class=" text-lg font-bold   p-3 text-black flex ">La raison ssssss</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-white text-center">
+                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne
+                                    et
+                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps
+                                    pendant la
+                                    lecture.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
 
 
     </body>
     <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('animation-container'), // Container to render the animation
-            renderer: 'svg', // Select the renderer
-            loop: true, // Set loop true/false
-            autoplay: true, // Set autoplay true/false
-            path: './assets/lottie/header.json' // Path to your JSON animation file
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 1,
+                rewind: true,
+                autoplay: true,
+                interval: 3000,
+                arrows: false
+            }).mount();
         });
+
+
         $(document).ready(function () {
             $(document).ready(function () {
                 $('.toggle-item').click(function () {
@@ -335,6 +483,8 @@
                 }
             });
         });
+
+
     </script>
 
     <script>
