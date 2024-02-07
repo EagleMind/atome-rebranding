@@ -17,271 +17,278 @@
 
 <body>
 
-    <body class="">
-        <div class="bg-primary  ">
-            <nav class="flex px-5 pt-5 sm:p-5 md:px-10 lg:px-10  lg:pt-10  flex justify-center items-center">
-                <div class="container flex justify-between items-center">
-                    <img src="assets/logo-home.svg" alt="Logo" class="h-4 md:h-5 lg:h-8">
-                    <button class="flex md:hidden text-white focus:outline-none lg:hidden toggle-button">
-                        <img src="assets/toggler.svg" alt="Toggle">
+    <body>
+        <nav
+            class=" bg-primary flex  px-5 lg:px-[11%] md:px-[6%]  xl:px-none  md:pt-5 lg:pt-10 pt-5  flex justify-center items-center">
+            <div class="container flex justify-between items-center">
+                <img src="assets/logo-home.svg" alt="Logo" class="h-6 md:h-5 lg:h-8">
+                <button class="flex md:hidden text-white focus:outline-none lg:hidden toggle-button">
+                    <img src="assets/toggler.svg" alt="Toggle">
+                </button>
+                <ul
+                    class="hidden md:flex md:items-center md:w-auto space-x-4 md:space-x-4 lg:space-x-8 lg:justify-center md:justify-center  lg:text-[15px]">
+
+                    <li class="flex"><a href="#"
+                            class="text-white hover:text-gray-300 font-rubik font-bold transition-colors duration-300 text-[15px] lg:text-[15px] md:text-[9px]">Programmes</a>
+                    </li>
+                    <li class="flex"><a href="#"
+                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Principal</a>
+                    </li>
+                    <li class="flex"><a href="#"
+                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Points
+                            De
+                            Vente</a></li>
+                    <li class="flex"><a href="#"
+                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Matières
+                            Scolaires</a></li>
+                    <li class="flex"><a href="#"
+                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Blog</a>
+                    </li>
+                </ul>
+                <div class="hidden md:flex items-center justify-center space-x-4 ">
+                    <button
+                        class="lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4  rounded-full  transition-all duration-300">
+                        Se connecter
                     </button>
-                    <ul
-                        class="hidden md:flex md:items-center md:w-auto space-x-4 md:space-x-4 lg:space-x-8 lg:justify-center md:justify-center  lg:text-[15px]">
 
-                        <li class="flex"><a href="#"
-                                class="text-white hover:text-gray-300 font-rubik font-bold transition-colors duration-300 text-[15px] lg:text-[15px] md:text-[9px]">Programmes</a>
-                        </li>
-                        <li class="flex"><a href="#"
-                                class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Principal</a>
-                        </li>
-                        <li class="flex"><a href="#"
-                                class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Points
-                                De
-                                Vente</a></li>
-                        <li class="flex"><a href="#"
-                                class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Matières
-                                Scolaires</a></li>
-                        <li class="flex"><a href="#"
-                                class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Blog</a>
-                        </li>
-                    </ul>
-                    <div class="hidden md:flex items-center justify-center space-x-4 ">
-                        <button
-                            class="lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4  rounded-full  transition-all duration-300">
-                            Se connecter
+
+
+                    <button
+                        class=" lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4 rounded-full  transition-all duration-300">
+                        Inscription gratuite
+                    </button>
+                    <div class="flex ">
+                        <button class="toggle-lang">
+                            <img src="assets/glove.png">
                         </button>
 
+                        <div
+                            class=" absolute hidden top-12 right-10 md:top-15 md:right-55 lg:top-20 md:right-55 bg-white rounded-lg languageDropdown md:p-3 z-100">
+                            <div class="flex flex-col">
+                                <span>Choisissez la langue</span>
+                                <div class="flex flex-col ">
+                                    <button class="hover:bg-black">
+                                        <div class="flex items-center justify-between hover:bg-customBlue">
 
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_220_1048)">
+                                                    <path
+                                                        d="M9.68979 19.374C15.0397 19.374 19.3766 15.037 19.3766 9.6871C19.3766 4.3372 15.0397 0.000244141 9.68979 0.000244141C4.33988 0.000244141 0.00292969 4.3372 0.00292969 9.6871C0.00292969 15.037 4.33988 19.374 9.68979 19.374Z"
+                                                        fill="#F0F0F0" />
+                                                    <path
+                                                        d="M19.3808 9.68713C19.3808 5.52212 16.752 1.97147 13.0632 0.602783V18.7715C16.752 17.4028 19.3808 13.8521 19.3808 9.68713Z"
+                                                        fill="#D80027" />
+                                                    <path
+                                                        d="M0.00292969 9.68713C0.00292969 13.8521 2.63174 17.4028 6.32046 18.7715V0.602783C2.63174 1.97147 0.00292969 5.52212 0.00292969 9.68713Z"
+                                                        fill="#0052B4" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_220_1048">
+                                                        <rect width="19.3737" height="19.3737" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Francais</span>
+                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138"
+                                                    stroke="#00148B" stroke-width="1.09714" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
 
-                        <button
-                            class=" lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4 rounded-full  transition-all duration-300">
-                            Inscription gratuite
-                        </button>
-                        <div class="flex ">
-                            <button class="toggle-lang">
-                                <img src="assets/glove.png">
-                            </button>
+                                    </button>
 
-                            <div
-                                class=" absolute hidden top-12 right-10 md:top-15 md:right-55 lg:top-20 md:right-55 bg-white rounded-lg languageDropdown md:p-3 z-100">
-                                <div class="flex flex-col">
-                                    <span>Choisissez la langue</span>
-                                    <div class="flex flex-col ">
-                                        <button class="hover:bg-black">
-                                            <div class="flex items-center justify-between hover:bg-customBlue">
+                                    <button class="hover:bg-customBlue">
+                                        <div class="flex items-center justify-between ">
 
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_220_1048)">
-                                                        <path
-                                                            d="M9.68979 19.374C15.0397 19.374 19.3766 15.037 19.3766 9.6871C19.3766 4.3372 15.0397 0.000244141 9.68979 0.000244141C4.33988 0.000244141 0.00292969 4.3372 0.00292969 9.6871C0.00292969 15.037 4.33988 19.374 9.68979 19.374Z"
-                                                            fill="#F0F0F0" />
-                                                        <path
-                                                            d="M19.3808 9.68713C19.3808 5.52212 16.752 1.97147 13.0632 0.602783V18.7715C16.752 17.4028 19.3808 13.8521 19.3808 9.68713Z"
-                                                            fill="#D80027" />
-                                                        <path
-                                                            d="M0.00292969 9.68713C0.00292969 13.8521 2.63174 17.4028 6.32046 18.7715V0.602783C2.63174 1.97147 0.00292969 5.52212 0.00292969 9.68713Z"
-                                                            fill="#0052B4" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_220_1048">
-                                                            <rect width="19.3737" height="19.3737" fill="white" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-                                                <span>Francais</span>
-                                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138"
-                                                        stroke="#00148B" stroke-width="1.09714" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_220_1051)">
+                                                    <path
+                                                        d="M10.1259 20.2516C15.7183 20.2516 20.2518 15.7181 20.2518 10.1257C20.2518 4.53328 15.7183 -0.000244141 10.1259 -0.000244141C4.53353 -0.000244141 0 4.53328 0 10.1257C0 15.7181 4.53353 20.2516 10.1259 20.2516Z"
+                                                        fill="#D80027" />
+                                                    <path
+                                                        d="M10.1326 14.9677C12.8073 14.9677 14.9755 12.7994 14.9755 10.1248C14.9755 7.4502 12.8073 5.28198 10.1326 5.28198C7.45801 5.28198 5.28979 7.4502 5.28979 10.1248C5.28979 12.7994 7.45801 14.9677 10.1326 14.9677Z"
+                                                        fill="#F0F0F0" />
+                                                    <path
+                                                        d="M10.7209 8.27466L11.5517 9.41956L12.8973 8.98327L12.0652 10.1272L12.8959 11.272L11.5508 10.8341L10.7187 11.978L10.7196 10.5635L9.37451 10.1256L10.7201 9.68928L10.7209 8.27466Z"
+                                                        fill="#D80027" />
+                                                    <path
+                                                        d="M11.225 12.9878C9.64454 12.9878 8.3633 11.7065 8.3633 10.1261C8.3633 8.54565 9.64454 7.2644 11.225 7.2644C11.7177 7.2644 12.1814 7.389 12.5862 7.60837C11.9512 6.98733 11.0828 6.604 10.1243 6.604C8.17921 6.604 6.60229 8.18088 6.60229 10.126C6.60229 12.0712 8.17921 13.6481 10.1243 13.6481C11.0828 13.6481 11.9512 13.2648 12.5862 12.6437C12.1814 12.8632 11.7177 12.9878 11.225 12.9878Z"
+                                                        fill="#D80027" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_220_1051">
+                                                        <rect width="20.2518" height="20.2518" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
 
-                                        </button>
+                                            <span>Arab</span>
+                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138"
+                                                    stroke="#00148B" stroke-width="1.09714" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
 
-                                        <button class="hover:bg-customBlue">
-                                            <div class="flex items-center justify-between ">
+                                    </button>
 
-                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_220_1051)">
-                                                        <path
-                                                            d="M10.1259 20.2516C15.7183 20.2516 20.2518 15.7181 20.2518 10.1257C20.2518 4.53328 15.7183 -0.000244141 10.1259 -0.000244141C4.53353 -0.000244141 0 4.53328 0 10.1257C0 15.7181 4.53353 20.2516 10.1259 20.2516Z"
-                                                            fill="#D80027" />
-                                                        <path
-                                                            d="M10.1326 14.9677C12.8073 14.9677 14.9755 12.7994 14.9755 10.1248C14.9755 7.4502 12.8073 5.28198 10.1326 5.28198C7.45801 5.28198 5.28979 7.4502 5.28979 10.1248C5.28979 12.7994 7.45801 14.9677 10.1326 14.9677Z"
-                                                            fill="#F0F0F0" />
-                                                        <path
-                                                            d="M10.7209 8.27466L11.5517 9.41956L12.8973 8.98327L12.0652 10.1272L12.8959 11.272L11.5508 10.8341L10.7187 11.978L10.7196 10.5635L9.37451 10.1256L10.7201 9.68928L10.7209 8.27466Z"
-                                                            fill="#D80027" />
-                                                        <path
-                                                            d="M11.225 12.9878C9.64454 12.9878 8.3633 11.7065 8.3633 10.1261C8.3633 8.54565 9.64454 7.2644 11.225 7.2644C11.7177 7.2644 12.1814 7.389 12.5862 7.60837C11.9512 6.98733 11.0828 6.604 10.1243 6.604C8.17921 6.604 6.60229 8.18088 6.60229 10.126C6.60229 12.0712 8.17921 13.6481 10.1243 13.6481C11.0828 13.6481 11.9512 13.2648 12.5862 12.6437C12.1814 12.8632 11.7177 12.9878 11.225 12.9878Z"
-                                                            fill="#D80027" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_220_1051">
-                                                            <rect width="20.2518" height="20.2518" fill="white" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                                <span>Arab</span>
-                                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138"
-                                                        stroke="#00148B" stroke-width="1.09714" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-
-                                        </button>
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                </div>
-            </nav>
 
-
-
-
-            <div
-                class="nav-menu fixed top-0 left-0  bg-primary flex-col justify-left z-10 lg:hidden hidden justify-between p-5 h-screen w-screen">
-                <div class="flex flex-col  text-white  space-y-6">
-                    <div class="flex items-center justify-between">
-                        <button class="text-white text-3xl focus:outline-none lg:hidden toggle-button-toggled-menu">
-                            <img src="assets/toggler.svg" alt="Toggle h-4">
-                        </button>
-                        <img src="assets/logo-home.svg" alt="Logo" class="h-6">
-
-                    </div>
-                    <nav class="flex flex-col space-y-4 justify-between text-center">
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Programmes
-                        </a>
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Points De Vente
-                        </a>
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Matières Scolaires
-                        </a>
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Blog
-                        </a>
-                        <div
-                            class="flex justify-between items-center text-[15px] text-center py-2 border-b border-white toggle-item">
-                            <a href="#" class="block" rel="ugc">
-                                À propos de la société
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="text-white h-4 w-4">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg>
-                        </div>
-
-                        <a href="#" class=" text-center block py-2 border-b border-white hidden text-[15px]" rel="ugc"
-                            id="conditions">
-                            Conditions d'utilisation
-                        </a>
-                        <a href="#" class="text-center block py-2 hidden transition-max-height text-[15px]" rel="ugc"
-                            id="confidentialite">
-                            Politique de confidentialité
-                        </a>
-                    </nav>
-                    <div class="lg:hidden w-full  justify-center">
-                        <button
-                            class="border-solid border-2 border-sky-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-[15px] rounded-full my-2 mr-5 text-sm w-full">
-                            Inscription gratuite
-                        </button>
-                        <button
-                            class="border-solid border-2 border-bg-customBlue  hover:bg-primary text-white font-bold py-2 px-4 rounded-full my-2 mr-5 text-sm w-full">
-                            Se connecter
-                        </button>
-
-                    </div>
                 </div>
             </div>
+        </nav>
 
 
-            <div class=" flex flex-col sm:flex-col md:flex-col items-center md:space-x-8 desktop:my-5">
 
-                <div class=" flex  flex-col sm:flex-col md:flex-col items-center md:space-x-8  desktop:my-5">
-                    <div class="flex  md:mx-10 flex-col lg:flex-row md:flex-row justify-between">
-                        <div
-                            class=" flex md:w-[38%]  lg:w-[38%]    text-center justify-center md:justify-center  md:text-left flex-col space-y-5 ">
 
-                            <div class="flex flex-col  space-y-2 mt-5 p-3">
-                                <span class="font-bold title-font  md:text-[24px] lg:text-[41px] text-[36px]">
-                                    Une
-                                    éducation
-                                    efficace et agréable!</span>
-                                <p
-                                    class=" font-medium text-white   md:text-[10px] lg:text-[18px] text-[15px] leading-normal">
-                                    La
-                                    plateforme Atome
-                                    offre
-                                    aux étudiants
-                                    de l'enseignement de base un enseignement efficace qui allie la richesse du
-                                    matériel
-                                    scientifique à une interaction ludique afin d'obtenir des résultats académiques
-                                    avancés
-                                    et
-                                    de développer la passion. L'apprentissage de votre enfant</p>
-                            </div>
-                            <div class="hidden md:flex space-x-2 px-3">
-                                <button
-                                    class="border-solid border-2 border-sky-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px]  lg:text-[15px] text-xs">
-                                    Inscription gratuite
-                                </button>
-                                <button
-                                    class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-[10px] text-xs">
-                                    Se connecter
-                                </button>
+        <div
+            class="nav-menu fixed top-0 left-0  bg-primary flex-col justify-left z-10 lg:hidden hidden justify-between p-5 h-screen w-screen">
+            <div class="flex flex-col  text-white  space-y-6">
+                <div class="flex items-center justify-between">
+                    <button class="text-white text-3xl focus:outline-none lg:hidden toggle-button-toggled-menu">
+                        <img src="assets/toggler.svg" alt="Toggle h-4">
+                    </button>
+                    <img src="assets/logo-home.svg" alt="Logo" class="h-6">
 
-                            </div>
+                </div>
+                <nav class="flex flex-col space-y-4 justify-between text-center">
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Programmes
+                    </a>
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Points De Vente
+                    </a>
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Matières Scolaires
+                    </a>
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Blog
+                    </a>
+                    <div
+                        class="flex justify-between items-center text-[15px] text-center py-2 border-b border-white toggle-item">
+                        <a href="#" class="block" rel="ugc">
+                            À propos de la société
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-white h-4 w-4">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+
+                    <a href="#" class=" text-center block py-2 border-b border-white hidden text-[15px]" rel="ugc"
+                        id="conditions">
+                        Conditions d'utilisation
+                    </a>
+                    <a href="#" class="text-center block py-2 hidden transition-max-height text-[15px]" rel="ugc"
+                        id="confidentialite">
+                        Politique de confidentialité
+                    </a>
+                </nav>
+                <div class="lg:hidden w-full  justify-center">
+                    <button
+                        class="border-solid border-2 border-sky-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-[15px] rounded-full my-2 mr-5 text-sm w-full">
+                        Inscription gratuite
+                    </button>
+                    <button
+                        class="border-solid border-2 border-bg-customBlue  hover:bg-primary text-white font-bold py-2 px-4 rounded-full my-2 mr-5 text-sm w-full">
+                        Se connecter
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-primary flex flex-col sm:flex-col md:flex-col items-center md:space-x-8 xs lg:px-[10%]   ">
+
+            <div class=" flex  flex-col sm:flex-col md:flex-col items-center  lg:my-5">
+                <div
+                    class="flex  flex-col lg:flex-row md:flex-row items-center lg:px-2 lg:justify-between md:justify-center  ">
+                    <div
+                        class="flex md:w-[38%] lg:w-[38%] text-center justify-center md:justify-center md:text-left flex-col space-y-5">
+
+                        <div class="flex flex-col space-y-2 mt-5 ">
+                            <span class="font-bold title-font md:text-[24px] lg:text-[41px] text-[36px]">
+                                Une éducation efficace et agréable!
+                            </span>
+                            <p class="font-medium text-white md:text-[10px] lg:text-[18px] text-[15px] leading-normal">
+                                La plateforme Atome offre aux étudiants de l'enseignement de base un enseignement
+                                efficace qui allie la
+                                richesse du matériel scientifique à une interaction ludique afin d'obtenir des
+                                résultats académiques
+                                avancés et de développer la passion. L'apprentissage de votre enfant
+                            </p>
                         </div>
-                        <div class="md:w-1/2 ">
-                            <dotlottie-player
-                                src="https://lottie.host/26a39330-3fca-41ae-8db3-4b022f2174ee/XRdioyR6zw.json"
-                                background="transparent" speed="1" class="z-10" loop autoplay></dotlottie-player>
-
-                        </div>
-                        <div class="md:hidden flex w-full justify-center space-x-2 my-3 ">
+                        <div class="flex justify-center space-x-2 px-3">
                             <button
-                                class="border-solid border-2 border-sky-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                                class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-xs">
                                 Inscription gratuite
                             </button>
                             <button
-                                class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-primary text-white font-bold py-2 px-4 rounded-full text-[10px] ">
+                                class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-[10px] text-xs">
                                 Se connecter
                             </button>
-
                         </div>
                     </div>
+                    <div class="md:w-1/2">
+                        <dotlottie-player src="https://lottie.host/26a39330-3fca-41ae-8db3-4b022f2174ee/XRdioyR6zw.json"
+                            background="transparent" speed="1" class="z-10" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="md:hidden flex w-full justify-center space-x-2 my-3">
+                        <button
+                            class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                            Inscription gratuite
+                        </button>
+                        <button
+                            class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-primary text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                            Se connecter
+                        </button>
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_20)">
+                    <path
+                        d="M1.35346 6.84478L2.67083 5.55993L12.1237 15.252L21.8158 5.79917L23.1006 7.11654L12.0912 17.8542L1.35346 6.84478Z"
+                        fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_20">
+                        <rect width="22.3065" height="22.3065" fill="white"
+                            transform="translate(23.2768 0.800354) rotate(90.716)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <section>
+            <div class="container justify-center">
+                <div class="md:w-3/5 lg:w-3/5">
+                    <div class="flex flex-col">
+                        <div class=" lg:h-32">
+                            testtesttesttesttesttesttesttesttesttesttesttest
+                        </div>
+                        <div class="flex flex-wrap">
+                            <div class="bg-primary">
+                                testtesttesttesttesttesttest
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_20)">
-                        <path
-                            d="M1.35346 6.84478L2.67083 5.55993L12.1237 15.252L21.8158 5.79917L23.1006 7.11654L12.0912 17.8542L1.35346 6.84478Z"
-                            fill="white" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_1_20">
-                            <rect width="22.3065" height="22.3065" fill="white"
-                                transform="translate(23.2768 0.800354) rotate(90.716)" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
+        </section>
 
 
 
