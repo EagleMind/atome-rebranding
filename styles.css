@@ -37,3 +37,36 @@ body, html {
     border-radius: 20px 20px 20px 20px;
     padding: 10px;
   }
+
+
+
+/* Custom styles for pagination dot */
+.splide__pagination__page {
+    position: absolute;
+    width: 11.97px;
+    height: 11.97px;
+    background: #6600FF;
+    color: #6600FF;
+    border-radius: 50%;
+}
+/* Custom pagination dot */
+.splide__pagination__page.is-active .splide__pagination__page__dot {
+    position: absolute;
+    width: 11.97px;
+    height: 11.97px;
+    left: 732.14px; /* Adjust left position as needed */
+    top: 2405.45px; /* Adjust top position as needed */
+    background: #6600FF;
+    border-radius: 50%;
+}
+
+
+.scale.is-active {
+ 
+  
+    div {
+        transition: transform 400ms;
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
+}
