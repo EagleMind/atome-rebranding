@@ -16,357 +16,376 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
-<body>
 
-    <body>
+<body class="h-screen">
 
+    <div class="px-[10%] bg-primary flex flex-col sm:flex-col md:flex-col items-center pt-5 lg:pt-10 ">
+        <div class="flex items-center  container justify-between ">
+            <img src="assets/logo-home.svg" alt="Logo" class="h-6 md:h-5 lg:h-8">
+            <button class="flex md:hidden text-white focus:outline-none lg:hidden toggle-button">
+                <img src="assets/toggler.svg" alt="Toggle">
+            </button>
 
-        <div class="px-[10%] bg-primary flex flex-col sm:flex-col md:flex-col items-center pt-5 lg:pt-10 ">
-            <div class="flex items-center  container justify-between ">
-                <img src="assets/logo-home.svg" alt="Logo" class="h-6 md:h-5 lg:h-8">
-                <button class="flex md:hidden text-white focus:outline-none lg:hidden toggle-button">
-                    <img src="assets/toggler.svg" alt="Toggle">
+            <ul
+                class="hidden md:flex md:items-center md:w-auto space-x-4 md:space-x-4 lg:space-x-8 lg:justify-center md:justify-center lg:text-[15px]">
+
+                <li class="flex"><a href="#"
+                        class="text-white hover:text-gray-300 font-rubik font-bold transition-colors duration-300 text-[15px] lg:text-[15px] md:text-[9px]">Programmes</a>
+                </li>
+                <li class="flex"><a href="#"
+                        class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Principal</a>
+                </li>
+                <li class="flex"><a href="#"
+                        class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Points
+                        De
+                        Vente</a></li>
+                <li class="flex"><a href="#"
+                        class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Matières
+                        Scolaires</a></li>
+                <li class="flex"><a href="#"
+                        class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Blog</a>
+                </li>
+            </ul>
+            <div class="hidden md:flex items-center justify-center space-x-4 ">
+                <button
+                    class="lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4  rounded-full  transition-all duration-300">
+                    Se connecter
                 </button>
 
-                <ul
-                    class="hidden md:flex md:items-center md:w-auto space-x-4 md:space-x-4 lg:space-x-8 lg:justify-center md:justify-center lg:text-[15px]">
-
-                    <li class="flex"><a href="#"
-                            class="text-white hover:text-gray-300 font-rubik font-bold transition-colors duration-300 text-[15px] lg:text-[15px] md:text-[9px]">Programmes</a>
-                    </li>
-                    <li class="flex"><a href="#"
-                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Principal</a>
-                    </li>
-                    <li class="flex"><a href="#"
-                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Points
-                            De
-                            Vente</a></li>
-                    <li class="flex"><a href="#"
-                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Matières
-                            Scolaires</a></li>
-                    <li class="flex"><a href="#"
-                            class="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[15px] md:text-[9px] text-[15px]">Blog</a>
-                    </li>
-                </ul>
-                <div class="hidden md:flex items-center justify-center space-x-4 ">
-                    <button
-                        class="lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4  rounded-full  transition-all duration-300">
-                        Se connecter
+                <button
+                    class=" lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4 rounded-full  transition-all duration-300">
+                    Inscription gratuite
+                </button>
+                <div class="flex ">
+                    <button class="toggle-lang">
+                        <img src="assets/glove.png">
                     </button>
 
+                    <div
+                        class=" absolute hidden top-12 right-10 md:top-15 md:right-55 lg:top-20 md:right-55 bg-white rounded-lg languageDropdown md:p-3 z-100">
+                        <div class="flex flex-col">
+                            <span>Choisissez la langue</span>
+                            <div class="flex flex-col ">
+                                <button class="hover:bg-black">
+                                    <div class="flex items-center justify-between hover:bg-customBlue">
 
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_220_1048)">
+                                                <path
+                                                    d="M9.68979 19.374C15.0397 19.374 19.3766 15.037 19.3766 9.6871C19.3766 4.3372 15.0397 0.000244141 9.68979 0.000244141C4.33988 0.000244141 0.00292969 4.3372 0.00292969 9.6871C0.00292969 15.037 4.33988 19.374 9.68979 19.374Z"
+                                                    fill="#F0F0F0" />
+                                                <path
+                                                    d="M19.3808 9.68713C19.3808 5.52212 16.752 1.97147 13.0632 0.602783V18.7715C16.752 17.4028 19.3808 13.8521 19.3808 9.68713Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M0.00292969 9.68713C0.00292969 13.8521 2.63174 17.4028 6.32046 18.7715V0.602783C2.63174 1.97147 0.00292969 5.52212 0.00292969 9.68713Z"
+                                                    fill="#0052B4" />
+                                            </g>
+                                            <defs>
+                                                <clippath id="clip0_220_1048">
+                                                    <rect width="19.3737" height="19.3737" fill="white" />
+                                                </clippath>
+                                            </defs>
+                                        </svg>
+                                        <span>Francais</span>
+                                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138" stroke="#00148B"
+                                                stroke-width="1.09714" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
 
-                    <button
-                        class=" lg:h-8 border border-1 border-sky-500 background-blue hover:bg-blue-700 text-white font-bold text-[15px] md:text-[9px] lg:text-[15px] md:p-1 lg:px-4 rounded-full  transition-all duration-300">
-                        Inscription gratuite
-                    </button>
-                    <div class="flex ">
-                        <button class="toggle-lang">
-                            <img src="assets/glove.png">
-                        </button>
+                                </button>
 
-                        <div
-                            class=" absolute hidden top-12 right-10 md:top-15 md:right-55 lg:top-20 md:right-55 bg-white rounded-lg languageDropdown md:p-3 z-100">
-                            <div class="flex flex-col">
-                                <span>Choisissez la langue</span>
-                                <div class="flex flex-col ">
-                                    <button class="hover:bg-black">
-                                        <div class="flex items-center justify-between hover:bg-customBlue">
+                                <button class="hover:bg-customBlue">
+                                    <div class="flex items-center justify-between ">
 
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_220_1048)">
-                                                    <path
-                                                        d="M9.68979 19.374C15.0397 19.374 19.3766 15.037 19.3766 9.6871C19.3766 4.3372 15.0397 0.000244141 9.68979 0.000244141C4.33988 0.000244141 0.00292969 4.3372 0.00292969 9.6871C0.00292969 15.037 4.33988 19.374 9.68979 19.374Z"
-                                                        fill="#F0F0F0" />
-                                                    <path
-                                                        d="M19.3808 9.68713C19.3808 5.52212 16.752 1.97147 13.0632 0.602783V18.7715C16.752 17.4028 19.3808 13.8521 19.3808 9.68713Z"
-                                                        fill="#D80027" />
-                                                    <path
-                                                        d="M0.00292969 9.68713C0.00292969 13.8521 2.63174 17.4028 6.32046 18.7715V0.602783C2.63174 1.97147 0.00292969 5.52212 0.00292969 9.68713Z"
-                                                        fill="#0052B4" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_220_1048">
-                                                        <rect width="19.3737" height="19.3737" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span>Francais</span>
-                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138"
-                                                    stroke="#00148B" stroke-width="1.09714" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_220_1051)">
+                                                <path
+                                                    d="M10.1259 20.2516C15.7183 20.2516 20.2518 15.7181 20.2518 10.1257C20.2518 4.53328 15.7183 -0.000244141 10.1259 -0.000244141C4.53353 -0.000244141 0 4.53328 0 10.1257C0 15.7181 4.53353 20.2516 10.1259 20.2516Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M10.1326 14.9677C12.8073 14.9677 14.9755 12.7994 14.9755 10.1248C14.9755 7.4502 12.8073 5.28198 10.1326 5.28198C7.45801 5.28198 5.28979 7.4502 5.28979 10.1248C5.28979 12.7994 7.45801 14.9677 10.1326 14.9677Z"
+                                                    fill="#F0F0F0" />
+                                                <path
+                                                    d="M10.7209 8.27466L11.5517 9.41956L12.8973 8.98327L12.0652 10.1272L12.8959 11.272L11.5508 10.8341L10.7187 11.978L10.7196 10.5635L9.37451 10.1256L10.7201 9.68928L10.7209 8.27466Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M11.225 12.9878C9.64454 12.9878 8.3633 11.7065 8.3633 10.1261C8.3633 8.54565 9.64454 7.2644 11.225 7.2644C11.7177 7.2644 12.1814 7.389 12.5862 7.60837C11.9512 6.98733 11.0828 6.604 10.1243 6.604C8.17921 6.604 6.60229 8.18088 6.60229 10.126C6.60229 12.0712 8.17921 13.6481 10.1243 13.6481C11.0828 13.6481 11.9512 13.2648 12.5862 12.6437C12.1814 12.8632 11.7177 12.9878 11.225 12.9878Z"
+                                                    fill="#D80027" />
+                                            </g>
+                                            <defs>
+                                                <clippath id="clip0_220_1051">
+                                                    <rect width="20.2518" height="20.2518" fill="white" />
+                                                </clippath>
+                                            </defs>
+                                        </svg>
 
-                                    </button>
+                                        <span>Arab</span>
+                                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138" stroke="#00148B"
+                                                stroke-width="1.09714" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
 
-                                    <button class="hover:bg-customBlue">
-                                        <div class="flex items-center justify-between ">
+                                </button>
 
-                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_220_1051)">
-                                                    <path
-                                                        d="M10.1259 20.2516C15.7183 20.2516 20.2518 15.7181 20.2518 10.1257C20.2518 4.53328 15.7183 -0.000244141 10.1259 -0.000244141C4.53353 -0.000244141 0 4.53328 0 10.1257C0 15.7181 4.53353 20.2516 10.1259 20.2516Z"
-                                                        fill="#D80027" />
-                                                    <path
-                                                        d="M10.1326 14.9677C12.8073 14.9677 14.9755 12.7994 14.9755 10.1248C14.9755 7.4502 12.8073 5.28198 10.1326 5.28198C7.45801 5.28198 5.28979 7.4502 5.28979 10.1248C5.28979 12.7994 7.45801 14.9677 10.1326 14.9677Z"
-                                                        fill="#F0F0F0" />
-                                                    <path
-                                                        d="M10.7209 8.27466L11.5517 9.41956L12.8973 8.98327L12.0652 10.1272L12.8959 11.272L11.5508 10.8341L10.7187 11.978L10.7196 10.5635L9.37451 10.1256L10.7201 9.68928L10.7209 8.27466Z"
-                                                        fill="#D80027" />
-                                                    <path
-                                                        d="M11.225 12.9878C9.64454 12.9878 8.3633 11.7065 8.3633 10.1261C8.3633 8.54565 9.64454 7.2644 11.225 7.2644C11.7177 7.2644 12.1814 7.389 12.5862 7.60837C11.9512 6.98733 11.0828 6.604 10.1243 6.604C8.17921 6.604 6.60229 8.18088 6.60229 10.126C6.60229 12.0712 8.17921 13.6481 10.1243 13.6481C11.0828 13.6481 11.9512 13.2648 12.5862 12.6437C12.1814 12.8632 11.7177 12.9878 11.225 12.9878Z"
-                                                        fill="#D80027" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_220_1051">
-                                                        <rect width="20.2518" height="20.2518" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-
-                                            <span>Arab</span>
-                                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.6455 1.07996L4.06267 7.66281L0.77124 4.37138"
-                                                    stroke="#00148B" stroke-width="1.09714" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-
-                                    </button>
-
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="nav-menu fixed top-0 left-0  bg-primary flex-col justify-left z-10 lg:hidden hidden justify-between p-5 h-screen w-screen">
+            <div class="flex flex-col  text-white  space-y-6">
+                <div class="flex items-center justify-between">
+                    <button class="text-white text-3xl focus:outline-none lg:hidden toggle-button-toggled-menu">
+                        <img src="assets/toggler.svg" alt="Toggle h-4">
+                    </button>
+                    <img src="assets/logo-home.svg" alt="Logo" class="h-6">
 
                 </div>
-            </div>
-            <div
-                class="nav-menu fixed top-0 left-0  bg-primary flex-col justify-left z-10 lg:hidden hidden justify-between p-5 h-screen w-screen">
-                <div class="flex flex-col  text-white  space-y-6">
-                    <div class="flex items-center justify-between">
-                        <button class="text-white text-3xl focus:outline-none lg:hidden toggle-button-toggled-menu">
-                            <img src="assets/toggler.svg" alt="Toggle h-4">
-                        </button>
-                        <img src="assets/logo-home.svg" alt="Logo" class="h-6">
-
-                    </div>
-                    <nav class="flex flex-col space-y-4 justify-between text-center">
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Programmes
-                        </a>
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Points De Vente
-                        </a>
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Matières Scolaires
-                        </a>
-                        <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
-                            Blog
-                        </a>
-                        <div
-                            class="flex justify-between items-center text-[15px] text-center py-2 border-b border-white toggle-item">
-                            <a href="#" class="block" rel="ugc">
-                                À propos de la société
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="text-white h-4 w-4">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg>
-                        </div>
-
-                        <a href="#" class=" text-center block py-2 border-b border-white hidden text-[15px]" rel="ugc"
-                            id="conditions">
-                            Conditions d'utilisation
-                        </a>
-                        <a href="#" class="text-center block py-2 hidden transition-max-height text-[15px]" rel="ugc"
-                            id="confidentialite">
-                            Politique de confidentialité
-                        </a>
-                    </nav>
-                    <div class="lg:hidden w-full  justify-center">
-                        <button
-                            class="border-solid border-2 border-sky-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-[15px] rounded-full my-2 mr-5 text-sm w-full">
-                            Inscription gratuite
-                        </button>
-                        <button
-                            class="border-solid border-2 border-bg-customBlue  hover:bg-primary text-white font-bold py-2 px-4 rounded-full my-2 mr-5 text-sm w-full">
-                            Se connecter
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class=" flex  flex-col sm:flex-col md:flex-col items-center  lg:my-5">
-                <div
-                    class="flex  flex-col lg:flex-row md:flex-row items-center lg:px-2 lg:justify-between md:justify-center  ">
+                <nav class="flex flex-col space-y-4 justify-between text-center">
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Programmes
+                    </a>
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Points De Vente
+                    </a>
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Matières Scolaires
+                    </a>
+                    <a href="#" class="block py-2 border-b border-white text-[15px]" rel="ugc">
+                        Blog
+                    </a>
                     <div
-                        class=" md:w-[38%] lg:w-[38%] text-center flex justify-center md:flex md:justify-left lg:justify-left space-x-2 px-3 md:text-left flex-col space-y-5 ">
-
-                        <div class="flex flex-col space-y-2 mt-5 ">
-                            <span class="font-bold text-[#F1BB31] md:text-[24px] lg:text-[41px] text-[36px]">
-                                Une éducation efficace et agréable!
-                            </span>
-                            <p class="font-medium text-white md:text-[10px] lg:text-[18px] text-[15px] leading-normal">
-                                La plateforme Atome offre aux étudiants de l'enseignement de base un enseignement
-                                efficace qui allie la
-                                richesse du matériel scientifique à une interaction ludique afin d'obtenir des
-                                résultats académiques
-                                avancés et de développer la passion. L'apprentissage de votre enfant
-                            </p>
-                        </div>
-                        <div class="hidden md:flex space-x-4">
-                            <button
-                                class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-xs">
-                                Inscription gratuite
-                            </button>
-                            <button
-                                class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-[10px] text-xs">
-                                Se connecter
-                            </button>
-                        </div>
-
+                        class="flex justify-between items-center text-[15px] text-center py-2 border-b border-white toggle-item">
+                        <a href="#" class="block" rel="ugc">
+                            À propos de la société
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-white h-4 w-4">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
                     </div>
-                    <div class="md:w-1/2">
-                        <dotlottie-player src="https://lottie.host/26a39330-3fca-41ae-8db3-4b022f2174ee/XRdioyR6zw.json"
-                            background="transparent" speed="1" class="z-10" loop autoplay></dotlottie-player>
+
+                    <a href="#" class=" text-center block py-2 border-b border-white hidden text-[15px]" rel="ugc"
+                        id="conditions">
+                        Conditions d'utilisation
+                    </a>
+                    <a href="#" class="text-center block py-2 hidden transition-max-height text-[15px]" rel="ugc"
+                        id="confidentialite">
+                        Politique de confidentialité
+                    </a>
+                </nav>
+                <div class="lg:hidden w-full  justify-center">
+                    <button
+                        class="border-solid border-2 border-sky-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-[15px] rounded-full my-2 mr-5 text-sm w-full">
+                        Inscription gratuite
+                    </button>
+                    <button
+                        class="border-solid border-2 border-bg-customBlue  hover:bg-primary text-white font-bold py-2 px-4 rounded-full my-2 mr-5 text-sm w-full">
+                        Se connecter
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=" flex  flex-col sm:flex-col md:flex-col items-center  lg:my-5">
+            <div
+                class="flex  flex-col lg:flex-row md:flex-row items-center lg:px-2 lg:justify-between md:justify-center  ">
+                <div
+                    class=" md:w-[38%] lg:w-[38%] text-center flex justify-center md:flex md:justify-left lg:justify-left space-x-2 px-3 md:text-left flex-col space-y-5 ">
+
+                    <div class="flex flex-col space-y-2 mt-5 ">
+                        <span class="font-bold text-[#F1BB31] md:text-[24px] lg:text-[41px] text-[36px]">
+                            Une éducation efficace et agréable!
+                        </span>
+                        <p class="font-medium text-white md:text-[10px] lg:text-[18px] text-[15px] leading-normal">
+                            La plateforme Atome offre aux étudiants de
+                            l'enseignement de base un enseignement
+                            efficace qui allie la
+                            richesse du matériel scientifique à une
+                            interaction ludique afin d'obtenir des
+                            résultats académiques
+                            avancés et de développer la passion.
+                            L'apprentissage de votre enfant
+                        </p>
                     </div>
-                    <div class="md:hidden flex w-full justify-center space-x-2 my-3">
+                    <div class="hidden md:flex space-x-4">
                         <button
-                            class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                            class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-xs">
                             Inscription gratuite
                         </button>
                         <button
-                            class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-primary text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                            class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full md:text-[10px] lg:text-[15px] text-[10px] text-xs">
                             Se connecter
                         </button>
                     </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="flex justify-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_20)">
-                    <path
-                        d="M1.35346 6.84478L2.67083 5.55993L12.1237 15.252L21.8158 5.79917L23.1006 7.11654L12.0912 17.8542L1.35346 6.84478Z"
-                        fill="white" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_1_20">
-                        <rect width="22.3065" height="22.3065" fill="white"
-                            transform="translate(23.2768 0.800354) rotate(90.716)" />
-                    </clipPath>
-                </defs>
-            </svg>
-        </div>
-        <section class="flex justify-center w-screen">
-
-            <div class=" lg:px-[8%] hidden md:container md:flex md:flex-col ">
-                <div class="text-center mb-12">
-                    <h1 class="text-3xl font-bold text-[#333333] mb-2">Un enseignement ludique, efficace et
-                        approfondi
-                    </h1>
-                    <p class="text-[#555555]">Cinq raisons de choisir la plateforme Education atome</p>
-                </div>
-                <div class="flex justify-left items-center mb-6 bg-customGray rounded-lg p-5">
-                    <div class="text-left">
-                        <div class="bg-white w-fit rounded-full my-2">
-                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
-                        </div>
-                        <p class="text-[#555555] mb-6">Des cours complets et détaillés, reconstruisant les notions de
-                            base pour votre enfant, même s'il n'a pas compris dans la section et ne manque pas, pour
-                            qu'il ne manque de rien.</p>
-
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-6 mb-12 ">
-                    <div class="bg-customBlue p-4 rounded-lg  flex-col flex items-center">
-                        <div class="bg-white w-fit rounded-full my-2">
-                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="text-white text-center">
-                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
-                                lecture.
-
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="bg-customRed p-4 rounded-lg  flex-col flex items-center">
-                        <div class="bg-white w-fit rounded-full my-2">
-                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="text-white text-center">
-                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
-                                lecture.
-
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="bg-customPurple p-4 rounded-lg  flex-col flex items-center">
-                        <div class="bg-white w-fit rounded-full my-2">
-                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="text-white text-center">
-                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
-                                lecture.
-
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="bg-primary p-4 rounded-lg  flex-col flex items-center">
-                        <div class="bg-white w-fit rounded-full my-2">
-                            <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="text-white text-center">
-                                Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
-                                lecture.
-
-                            </p>
-                        </div>
-
-                    </div>
 
                 </div>
-
+                <div class="md:w-1/2">
+                    <dotlottie-player src="https://lottie.host/26a39330-3fca-41ae-8db3-4b022f2174ee/XRdioyR6zw.json"
+                        background="transparent" speed="1" class="z-10" loop autoplay></dotlottie-player>
+                </div>
+                <div class="md:hidden flex w-full justify-center space-x-2 my-3">
+                    <button
+                        class="border-solid border-2 border-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                        Inscription gratuite
+                    </button>
+                    <button
+                        class="border-solid border-2 border-sky-500 bg-customBlue hover:bg-primary text-white font-bold py-2 px-4 rounded-full text-[10px]">
+                        Se connecter
+                    </button>
+                </div>
             </div>
 
-        </section>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_20)">
+                <path
+                    d="M1.35346 6.84478L2.67083 5.55993L12.1237 15.252L21.8158 5.79917L23.1006 7.11654L12.0912 17.8542L1.35346 6.84478Z"
+                    fill="white" />
+            </g>
+            <defs>
+                <clippath id="clip0_1_20">
+                    <rect width="22.3065" height="22.3065" fill="white"
+                        transform="translate(23.2768 0.800354) rotate(90.716)" />
+                </clippath>
+            </defs>
+        </svg>
+    </div>
+    <section class="flex justify-center w-screen">
 
+        <div class=" lg:px-[8%] hidden md:container md:flex md:flex-col ">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl font-bold text-[#333333] mb-2">Un
+                    enseignement ludique, efficace et
+                    approfondi
+                </h1>
+                <p class="text-[#555555]">Cinq raisons de choisir la
+                    plateforme Education atome</p>
+            </div>
+            <div class="flex justify-left items-center mb-6 bg-customGray rounded-large p-5">
+                <div class="text-left">
+                    <div class="bg-white w-fit rounded-full my-2">
+                        <p class=" text-lg font-bold   p-3 text-black flex ">La
+                            raison premier</p>
+                    </div>
+                    <p class="text-[#555555] mb-6">Des cours complets et
+                        détaillés, reconstruisant les notions de
+                        base pour votre enfant, même s'il n'a pas
+                        compris dans la section et ne manque pas, pour
+                        qu'il ne manque de rien.</p>
+
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 mb-12 ">
+                <div class="bg-customBlue p-4 rounded-large  flex-col flex items-center">
+                    <div class="bg-white w-fit rounded-full my-2">
+                        <p class=" text-lg font-bold   p-3 text-black flex ">La
+                            raison premier</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-white text-center">
+                            Exercices pratiques avec évaluation et
+                            correction immédiates de manière moderne et
+                            interactive qui permettent à l'enfant de ne
+                            pas perdre la notion du temps pendant la
+                            lecture.
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="bg-customRed p-4 rounded-large  flex-col flex items-center">
+                    <div class="bg-white w-fit rounded-full my-2">
+                        <p class=" text-lg font-bold   p-3 text-black flex ">La
+                            raison premier</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-white text-center">
+                            Exercices pratiques avec évaluation et
+                            correction immédiates de manière moderne et
+                            interactive qui permettent à l'enfant de ne
+                            pas perdre la notion du temps pendant la
+                            lecture.
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="bg-customPurple p-4 rounded-large  flex-col flex items-center">
+                    <div class="bg-white w-fit rounded-full my-2">
+                        <p class=" text-lg font-bold   p-3 text-black flex ">La
+                            raison premier</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-white text-center">
+                            Exercices pratiques avec évaluation et
+                            correction immédiates de manière moderne et
+                            interactive qui permettent à l'enfant de ne
+                            pas perdre la notion du temps pendant la
+                            lecture.
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="bg-primary p-4 rounded-large  flex-col flex items-center">
+                    <div class="bg-white w-fit rounded-full my-2">
+                        <p class=" text-lg font-bold   p-3 text-black flex ">La
+                            raison premier</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-white text-center">
+                            Exercices pratiques avec évaluation et
+                            correction immédiates de manière moderne et
+                            interactive qui permettent à l'enfant de ne
+                            pas perdre la notion du temps pendant la
+                            lecture.
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="sectionOne">
         <div class="splide  flex w-full h-fit p-3 md:hidden " id="carousel1">
             <div class="splide__track ">
                 <ul class="splide__list p-5">
                     <li class="splide__slide bg-customBlue mx-10">
                         <div class="  flex-col flex items-center">
                             <div class="bg-white w-fit rounded-full my-2">
-                                <p class=" text-lg font-bold   p-3 text-black flex ">La raison premier
+                                <p class=" text-lg font-bold text-center  p-3 text-black flex ">La
+                                    raison premier
                                 </p>
                             </div>
                             <div class="flex items-center">
                                 <p class="text-white text-center">
-                                    Des cours complets et détaillés, reconstruisant les notions de base pour votre
-                                    enfant, même s'il n'a pas compris dans la section et ne manque pas, pour qu'il ne
+                                    Des cours complets et détaillés,
+                                    reconstruisant les notions de base
+                                    pour votre
+                                    enfant, même s'il n'a pas compris
+                                    dans la section et ne manque pas,
+                                    pour qu'il
+                                    ne
                                     manque de rien
 
                                 </p>
@@ -377,13 +396,20 @@
                     <li class="splide__slide bg-customRed mx-5">
                         <div class=" p-4 rounded-lg  flex-col flex items-center">
                             <div class="bg-white w-fit rounded-full my-2">
-                                <p class=" text-lg font-bold   p-3 text-black flex ">la troisième raison
+                                <p class=" text-lg font-bold text-center  p-3 text-black flex ">la
+                                    troisième raison
                                 </p>
                             </div>
                             <div class="flex items-center">
                                 <p class="text-white text-center">
-                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                    Exercices pratiques avec évaluation
+                                    et correction immédiates de manière
+                                    moderne
+                                    et
+                                    interactive qui permettent à
+                                    l'enfant de ne pas perdre la notion
+                                    du temps
+                                    pendant la
                                     lecture.
 
                                 </p>
@@ -394,14 +420,20 @@
                     <li class="splide__slide bg-customPurple mx-5">
                         <div class=" p-4 rounded-lg  flex-col flex items-center">
                             <div class="bg-white w-fit rounded-full my-2">
-                                <p class=" text-lg font-bold   p-3 text-black flex ">La deuxième raison</p>
+                                <p class=" text-lg font-bold text-center  p-3 text-black flex ">La
+                                    deuxième raison</p>
                             </div>
                             <div class="flex items-center">
                                 <p class="text-white text-center">
-                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                    Exercices pratiques avec évaluation
+                                    et correction immédiates de manière
+                                    moderne
+                                    et
+                                    interactive qui permettent à
+                                    l'enfant de ne pas perdre la notion
+                                    du temps
+                                    pendant la
                                     lecture.
-
 
                                 </p>
                             </div>
@@ -412,13 +444,20 @@
                     <li class="splide__slide bg-primary mx-5">
                         <div class=" p-4 rounded-lg  flex-col flex items-center">
                             <div class="bg-white w-fit rounded-full my-2">
-                                <p class=" text-lg font-bold   p-3 text-black flex ">La cinquième raison
+                                <p class=" text-lg font-bold   p-3 text-black flex ">La
+                                    cinquième raison
                                 </p>
                             </div>
                             <div class="flex items-center">
                                 <p class="text-white text-center">
-                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                    Exercices pratiques avec évaluation
+                                    et correction immédiates de manière
+                                    moderne
+                                    et
+                                    interactive qui permettent à
+                                    l'enfant de ne pas perdre la notion
+                                    du temps
+                                    pendant la
                                     lecture.
 
                                 </p>
@@ -426,18 +465,24 @@
 
                         </div>
 
-
                     </li>
                     <li class="splide__slide bg-primary mx-5">
                         <div class=" p-4 rounded-large  flex-col flex items-center">
                             <div class="bg-white w-fit rounded-full my-2">
-                                <p class=" text-lg font-bold   p-3 text-black flex ">La quatrième raison
+                                <p class=" text-lg font-bold   p-3 text-black flex ">La
+                                    quatrième raison
                                 </p>
                             </div>
                             <div class="flex items-center">
                                 <p class="text-white text-center">
-                                    Exercices pratiques avec évaluation et correction immédiates de manière moderne et
-                                    interactive qui permettent à l'enfant de ne pas perdre la notion du temps pendant la
+                                    Exercices pratiques avec évaluation
+                                    et correction immédiates de manière
+                                    moderne
+                                    et
+                                    interactive qui permettent à
+                                    l'enfant de ne pas perdre la notion
+                                    du temps
+                                    pendant la
                                     lecture.
 
                                 </p>
@@ -448,7 +493,7 @@
                 </ul>
             </div>
         </div>
-        <section class="hidden md:flex justify-center">
+        <div class="hidden md:flex justify-center">
             <div class="splide  flex w-full  h-fit p-3  " id="carousel2">
                 <div class="splide__arrows flex items-center">
                     <button class=" splide__arrow--prev">
@@ -464,7 +509,6 @@
 
                 </div>
 
-
                 <div class="splide__track ">
                     <ul class="splide__list p-5">
                         <li class="splide__slide  ">
@@ -476,7 +520,8 @@
                                     <div class="text-center ">
                                         <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
                                             frssançaise</div>
-                                        <div class="text-sm text-white ">Sixième année de base</div>
+                                        <div class="text-sm text-white ">Sixième
+                                            année de base</div>
                                         <button class="m-3 p-3 bg-white rounded-lg">
                                             Essayer gratuitement
                                         </button>
@@ -493,7 +538,8 @@
                                     <div class="text-center ">
                                         <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
                                             frssançaise</div>
-                                        <div class="text-sm text-white ">Sixième année de base</div>
+                                        <div class="text-sm text-white ">Sixième
+                                            année de base</div>
                                         <button class="m-3 p-3 bg-white rounded-lg">
                                             Essayer gratuitement
                                         </button>
@@ -510,7 +556,8 @@
                                     <div class="text-center ">
                                         <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
                                             frssançaise</div>
-                                        <div class="text-sm text-white ">Sixième année de base</div>
+                                        <div class="text-sm text-white ">Sixième
+                                            année de base</div>
                                         <button class="m-3 p-3 bg-white rounded-lg">
                                             Essayer gratuitement
                                         </button>
@@ -525,8 +572,10 @@
                                     width="175" height="290" style="aspect-ratio: 175 / 290; object-fit: cover;" />
                                 <div class="bg-white p-4">
                                     <div class="text-center">
-                                        <div class="text-lg font-bold text-gray-900">Langue française</div>
-                                        <div class="text-sm text-gray-600">Sixième année de base</div>
+                                        <div class="text-lg font-bold text-gray-900">Langue
+                                            française</div>
+                                        <div class="text-sm text-gray-600">Sixième
+                                            année de base</div>
                                         <button
                                             class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 mt-4 bg-blue-600 text-white w-full">
                                             Essayer gratuitement
@@ -542,8 +591,10 @@
                                     width="175" height="290" style="aspect-ratio: 175 / 290; object-fit: cover;" />
                                 <div class="bg-white p-4">
                                     <div class="text-center">
-                                        <div class="text-lg font-bold text-gray-900">Langue française</div>
-                                        <div class="text-sm text-gray-600">Sixième année de base</div>
+                                        <div class="text-lg font-bold text-gray-900">Langue
+                                            française</div>
+                                        <div class="text-sm text-gray-600">Sixième
+                                            année de base</div>
                                         <button
                                             class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 mt-4 bg-blue-600 text-white w-full">
                                             Essayer gratuitement
@@ -559,8 +610,10 @@
                                     width="175" height="290" style="aspect-ratio: 175 / 290; object-fit: cover;" />
                                 <div class="bg-white p-4">
                                     <div class="text-center">
-                                        <div class="text-lg font-bold text-gray-900">Langue française</div>
-                                        <div class="text-sm text-gray-600">Sixième année de base</div>
+                                        <div class="text-lg font-bold text-gray-900">Langue
+                                            française</div>
+                                        <div class="text-sm text-gray-600">Sixième
+                                            année de base</div>
                                         <button
                                             class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 mt-4 bg-blue-600 text-white w-full">
                                             Essayer gratuitement
@@ -588,205 +641,511 @@
 
             </div>
 
-        </section>
-        <section class="flex md:hidden justify-center">
-            <div class="splide  flex w-full   " id="carousel3">
+        </div>
+    </section>
+    <section class="sectionThree  my-10">
+        <div class="hidden md:flex justify-center">
+            <div
+                class="border bg-customPurple text-card-foreground w-[15%] h-fit rounded-large overflow-visible shadow-lg relative flex flex-col justify-center items-center m-2">
+                <img src="http://localhost/atome-rebranding/assets/card1.png" alt="Character"
+                    class="absolute top-[-10%] " />
+                <div class="flex flex-col py-3 mt-auto justify-center px-5 h-[40%]">
+                    <div class="text-center flex flex-col  ">
+                        <div class="text-lg font-bold text-gray-900 bg-gray text-white">La
+                            carte Bancaire</div>
+                        <div class="text-sm text-white">Un moyen de paiement
+                            sûr et sécurisé de la Banque Centrale de
+                            Tunisie</div>
+                    </div>
+                </div>
+            </div>
 
+            <div
+                class="border bg-customPurple text-card-foreground w-[15%] h-[400px] rounded-large overflow-visible shadow-lg relative flex flex-col justify-center items-center m-2">
+                <img src="http://localhost/atome-rebranding/assets/card2.png" alt="Character"
+                    class=" absolute top-[-10%]" />
+                <div class="flex flex-col py-3 mt-auto justify-center px-5 h-[40%]">
+                    <div class="text-center flex flex-col">
+                        <div class="text-lg font-bold text-gray-900 bg-gray text-white">Bibliothèques
+                            Approuvé</div>
+                        <div class="text-sm text-white">Une liste de plus de
+                            100 bibliothèques dans tous les états
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-                <div class="splide__track py-10 ">
-                    <ul class="splide__list p-5">
-                        <li class="splide__slide scale ">
-                            <div class="border bg-card  text-card-foreground w-[240px] rounded-large overflow-hidden shadow-lg"
-                                data-v0-t="card">
-                                <img src="http://localhost/atome-rebranding/assets/1.png" alt="Character" class="w-full"
-                                    style="aspect-ratio: 175 / 290; object-fit: cover;" />
-                                <div class="bg-customPurple flex flex-col justify-between py-3">
-                                    <div class="text-center py-3">
-                                        <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
-                                            frssançaise</div>
-                                        <div class="text-sm text-white ">Sixième année de base</div>
-                                        <button class=" p-3 bg-white rounded-lg">
-                                            Essayer gratuitement
-                                        </button>
+            <div
+                class="border bg-customPurple text-card-foreground w-[15%] h-[400px] rounded-large overflow-visible shadow-lg relative flex flex-col justify-center items-center m-2">
+                <img src="http://localhost/atome-rebranding/assets/card3.png" alt="Character"
+                    class=" absolute top-[-10%] " />
+                <div class="flex flex-col py-3 mt-auto justify-center px-5 h-[40%]">
+                    <div class="text-center flex flex-col ">
+                        <div class="text-lg font-bold text-gray-900 bg-gray text-white ">Payez
+                            en espèces par le service
+                            de livraison </div>
+                        <div class="text-sm text-white">Payez en espèces ou
+                            par chèque bancaire via le service de
+                            livraison depuis votre domicile</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex md:hidden justify-center my-20 ">
+            <div class="splide  flex w-full   " id="carousel4">
+                <div class="splide__track   ">
+                    <ul class="splide__list w-[70%]  ">
+                        <li class="splide__slide bg-customPurple scale mx-10 ">
+                            <div
+                                class="  text-card-foreground w-full rounded-large o relative flex flex-col justify-between items-center ">
+                                <img src="http://localhost/atome-rebranding/assets/card1.png" alt="Character"
+                                    class=" absolute top-[-25%] " />
+                                <div class="flex flex-col pt-[70%] items-center justify-center h-[20%] w-full">
+                                    <div class="text-center flex flex-col items-center">
+                                        <div class="text-lg font-bold text-gray-900 bg-gray text-white ">
+                                            La carte Bancaire</div>
+                                        <div class="text-sm text-white">Un moyen de paiement sûr et sécurisé de la
+                                            Banque Centrale de Tunisie
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </li>
-                        <li class="splide__slide scale ">
-                            <div class="border bg-card  text-card-foreground w-[240px] rounded-large overflow-hidden shadow-lg"
-                                data-v0-t="card">
-                                <img src="http://localhost/atome-rebranding/assets/1.png" alt="Character" class="w-full"
-                                    style="aspect-ratio: 175 / 290; object-fit: cover;" />
-                                <div class="bg-customPurple flex flex-col justify-between py-3">
-                                    <div class="text-center py-3">
-                                        <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
-                                            frssançaise</div>
-                                        <div class="text-sm text-white ">Sixième année de base</div>
-                                        <button class=" p-3 bg-white rounded-lg">
-                                            Essayer gratuitement
-                                        </button>
+
+                        <li class="splide__slide h-[15%] bg-customBlue  scale mx-10">
+                            <div
+                                class="  text-card-foreground w-full rounded-large overflow-visible  relative flex flex-col justify-between items-center ">
+                                <img src="http://localhost/atome-rebranding/assets/card2.png" alt="Character"
+                                    class=" absolute top-[-25%] " />
+                                <div class="flex flex-col pt-[70%] items-center justify-center h-[20%] w-full">
+                                    <div class="text-center flex flex-col items-center">
+                                        <div class="text-lg font-bold text-gray-900 bg-gray text-white ">Payez
+                                            en espèces par le service
+                                            de livraison </div>
+                                        <div class="text-sm text-white">Payez en espèces ou
+                                            par chèque bancaire via le service de
+                                            livraison depuis votre domicile</div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="splide__slide scale ">
-                            <div class="border bg-card  text-card-foreground w-[240px] rounded-large overflow-hidden shadow-lg"
-                                data-v0-t="card">
-                                <img src="http://localhost/atome-rebranding/assets/1.png" alt="Character" class="w-full"
-                                    style="aspect-ratio: 175 / 290; object-fit: cover;" />
-                                <div class="bg-customPurple flex flex-col justify-between py-3">
-                                    <div class="text-center py-3">
-                                        <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
-                                            frssançaise</div>
-                                        <div class="text-sm text-white ">Sixième année de base</div>
-                                        <button class=" p-3 bg-white rounded-lg">
-                                            Essayer gratuitement
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </li>
 
 
                     </ul>
                 </div>
+            </div>
+        </div>
 
+    </section>
+    <section class="sectionTwo flex md:hidden justify-center">
+        <div class="splide  flex w-full   " id="carousel3">
 
+            <div class="splide__track py-10 ">
+                <ul class="splide__list p-5">
+                    <li class="splide__slide scale ">
+                        <div class="border bg-card  text-card-foreground w-[200px] rounded-large overflow-hidden shadow-lg"
+                            data-v0-t="card">
+                            <img src="http://localhost/atome-rebranding/assets/1.png" alt="Character" class="w-full"
+                                style="aspect-ratio: 175 / 290; object-fit: cover;" />
+                            <div class="bg-customPurple flex flex-col justify-between py-3">
+                                <div class="text-center py-3">
+                                    <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
+                                        frssançaise</div>
+                                    <div class="text-sm text-white ">Sixième
+                                        année de base</div>
+                                    <button class=" p-3 bg-white rounded-lg">
+                                        Essayer gratuitement
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide scale ">
+                        <div class="border bg-card  text-card-foreground w-[200px] rounded-large overflow-hidden shadow-lg"
+                            data-v0-t="card">
+                            <img src="http://localhost/atome-rebranding/assets/1.png" alt="Character" class="w-full"
+                                style="aspect-ratio: 175 / 290; object-fit: cover;" />
+                            <div class="bg-customPurple flex flex-col justify-between py-3">
+                                <div class="text-center py-3">
+                                    <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
+                                        frssançaise</div>
+                                    <div class="text-sm text-white ">Sixième
+                                        année de base</div>
+                                    <button class=" p-3 bg-white rounded-lg">
+                                        Essayer gratuitement
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide scale ">
+                        <div class="border bg-card  text-card-foreground w-[200px] rounded-large overflow-hidden shadow-lg"
+                            data-v0-t="card">
+                            <img src="http://localhost/atome-rebranding/assets/1.png" alt="Character" class="w-full"
+                                style="aspect-ratio: 175 / 290; object-fit: cover;" />
+                            <div class="bg-customPurple flex flex-col justify-between py-3">
+                                <div class="text-center py-3">
+                                    <div class="text-lg font-bold text-gray-900 bg-gray text-white">Langue
+                                        frssançaise</div>
+                                    <div class="text-sm text-white ">Sixième
+                                        année de base</div>
+                                    <button class=" p-3 bg-white rounded-lg">
+                                        Essayer gratuitement
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
+                </ul>
             </div>
 
-        </section>
+        </div>
+
+    </section>
+    <section class="flex justify-center items-center h-fit">
+        <div
+            class="flex md:flex lg:flex md:flex-row lg:flex-row md:justify-between lg:justify-between flex-col md:flex-nowrap lg:flex-nowrap">
+            <!-- First Column -->
+            <div class="md:w-1/2 lg:w-1/2 h-[200px] mx-10 bg-customRed rounded-large">
+                <div class="text-center flex flex-col  items-center justify-between space-y-5 p-5">
+                    <div class="text-lg font-bold text-gray-900 bg-gray text-white ">Versements mensuel</div>
+                    <div><svg width="70" height="92" viewBox="0 0 70 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="11.6023" y="5.15772" width="53.1089" height="81.2998" stroke="white"
+                                stroke-width="9.10548" />
+                            <rect opacity="0.9" x="0.243408" y="36.3682" width="6.17002" height="23.4461"
+                                transform="rotate(-90 0.243408 36.3682)" fill="white" />
+                            <rect opacity="0.9" x="0.243408" y="47.9268" width="6.17002" height="23.4461"
+                                transform="rotate(-90 0.243408 47.9268)" fill="white" />
+                            <rect opacity="0.9" x="0.243408" y="62.3755" width="6.17002" height="23.4461"
+                                transform="rotate(-90 0.243408 62.3755)" fill="white" />
+                            <rect opacity="0.9" x="34.3892" y="75.7256" width="4.55274" height="18.211"
+                                transform="rotate(-90 34.3892 75.7256)" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="md:w-1/2 lg:w-1/2 h-[200px] mx-10 bg-customBlue space-y-5 rounded-large">
+                <div class="text-center flex flex-col items-center justify-between  space-y-5 p-5">
+                    <div class="text-lg font-bold text-gray-900 bg-gray text-white ">Versements mensuel</div>
+                    <div><svg width="67" height="68" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.0539551" y="0.742188" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="23.7371" y="0.742188" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="47.4202" y="0.742188" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="0.0539551" y="24.4258" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="23.7371" y="24.4258" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="47.4202" y="24.4258" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="0.0539551" y="48.1079" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="23.7371" y="48.1099" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                            <rect x="47.4202" y="48.1079" width="19.0421" height="19.0421" fill="#F2F2F2" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 lg:w-1/2 h-[200px] mx-10 bg-customPurple  rounded-large">
+                <div class="text-center flex flex-col  items-center justify-between justify-center space-y-5 p-5">
+                    <div class="text-lg font-bold text-gray-900 bg-gray text-white ">Abonnement Mensuel</div>
+                    <div><svg width="76" height="81" viewBox="0 0 76 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.73777" y="14.897" width="68.1666" height="61.7989" stroke="white"
+                                stroke-width="7.05172" />
+                            <rect x="23.2466" y="25.9473" width="7.05172" height="25.8563"
+                                transform="rotate(-180 23.2466 25.9473)" fill="white" />
+                            <rect x="58.0352" y="25.9473" width="7.05172" height="25.8563"
+                                transform="rotate(-180 58.0352 25.9473)" fill="white" />
+                            <path
+                                d="M35.6966 55.8867C35.4674 55.8867 35.2695 55.8138 35.1028 55.6679C34.9569 55.5012 34.884 55.3033 34.884 55.0741V41.322L30.9772 44.3225C30.7688 44.4475 30.5604 44.4892 30.3521 44.4475C30.1645 44.4058 29.9874 44.2808 29.8207 44.0724L27.5391 41.1032C27.435 40.9157 27.3933 40.7074 27.4141 40.4782C27.4558 40.249 27.5808 40.0718 27.7892 39.9468L35.1653 34.2272C35.2695 34.1439 35.3737 34.0918 35.4778 34.0709C35.582 34.0293 35.707 34.0084 35.8529 34.0084H40.7599C40.9891 34.0084 41.187 34.0918 41.3537 34.2585C41.5204 34.4043 41.6038 34.5919 41.6038 34.8211V55.0741C41.6038 55.3033 41.5204 55.5012 41.3537 55.6679C41.187 55.8138 40.9891 55.8867 40.7599 55.8867H35.6966Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex md:flex-col items-center">
+        <div class="w-full md:w-4/5">
+            <div class="flex flex-col md:flex-row m-2">
+                <div class="flex flex-col w-full md:w-3/5  bg-customBlue md:p-10 p-3 m-2 rounded-large justify-center">
+                    <div class="hidden md:flex">
+                        <svg width="35" height="35" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="md:hidden flex">
+                        <svg width="11" height="11" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+
+                    <h1 class="font-bold text-white md:text-[32px] text-[13px] md:px-10 px-5">Le téléphone portable, une
+                        malédiction ou une
+                        bénédiction ?</h1>
+                    <p class="text-white md:text-[27px] text-[11px] md:px-10 px-5">Des cours complets et détaillés,
+                        reconstruisant les
+                        concepts de
+                        base
+                        pour
+                        votre enfant, même s'il
+                        ne les a pas compris dans la section. Cours complets, cours complets et détaillés,
+                        reconstruction des concepts de base pour votre enfant, cours complets et Charnière,</p>
+                </div>
+                <div
+                    class="flex flex-col  w-full md:w-2/5 bg-customPurple md:p-10 p-3 m-2 rounded-large justify-center">
+                    <div class="hidden md:flex">
+                        <svg width="35" height="35" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="md:hidden flex">
+                        <svg width="11" height="11" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <h1 class="font-bold text-white md:text-[32px] text-[13px] md:px-10 px-5">Le téléphone portable, une
+                        malédiction ou une
+                        bénédiction ?</h1>
+                    <p class="text-white md:text-[27px] text-[11px] md:px-10 px-5">Des cours complets et détaillés,
+                        reconstruisant les concepts
+                        de
+                        base pour
+                        votre enfant, même s'il
+                        ne les a pas compris dans la section. Cours complets, cours complets et détaillés,
+                        reconstruction des concepts de base pour votre enfant, cours complets et Charnière,</p>
+                </div>
+
+            </div>
+            <div class="flex flex-col md:flex-row m-2">
+                <div class="flex flex-col  w-full md:w-2/5 bg-customRed md:p-10 p-3 m-2 rounded-large justify-center">
+                    <div class="hidden md:flex">
+                        <svg width="35" height="35" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="md:hidden flex">
+                        <svg width="11" height="11" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
 
 
-    </body>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#carousel1', {
-                classed: { pagination: 'splide__pagination is-active', },
-                type: 'loop',
-                perPage: 1,
-                rewind: true,
-                autoplay: true,
-                interval: 3000,
-                arrows: false,
-                padding: '20%',
-                pagination: false
-            }).mount();
-            new Splide('#carousel2', {
-                type: 'loop',
-                perPage: 3,
-                rewind: true,
-                autoplay: true,
-                interval: 3000,
-                arrows: true,
-                pagination: true,
-                width: '50%',
-                cloneStatus: true,
-                focus: 'center',
-            }).mount();
-            new Splide('#carousel3', {
-                type: 'loop',
-                perPage: 1,
-                rewind: true,
-                autoplay: true,
-                interval: 3000,
-                arrows: false,
-                pagination: false,
-                width: '100%',
-                cloneStatus: false,
-                focus: 'center',
-                padding: '20%',
-                fixedHeight: '40rem'
-            }).mount();
-        });
+                    <h1 class="font-bold text-white md:text-[32px] text-[13px] md:px-10 px-5">Le téléphone portable, une
+                        malédiction ou une
+                        bénédiction ?</h1>
+                    <p class="text-white md:text-[27px] text-[11px] md:px-10 px-5">Des cours complets et détaillés,
+                        reconstruisant les concepts
+                        de
+                        base pour
+                        votre enfant, même s'il
+                        ne les a pas compris dans la section. Cours complets, cours complets et détaillés,
+                        reconstruction des concepts de base pour votre enfant, cours complets et Charnière,</p>
+                </div>
+                <div
+                    class="flex flex-col  w-full md:w-3/5 bg-customPurple md:p-10 p-3 m-2 rounded-large justify-center">
+                    <div class="hidden md:flex">
+                        <svg width="35" height="35" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="md:hidden flex">
+                        <svg width="11" height="11" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2719 12.1228C20.9953 13.3994 20.357 14.9496 20.357 16.7733C20.357 18.597 20.9953 20.1775 22.2719 21.5149C23.5485 22.7914 25.0986 23.4297 26.9223 23.4297C28.746 23.4297 30.3266 22.7914 31.6639 21.5149C32.9405 20.1775 33.5788 18.597 33.5788 16.7733C33.5788 13.7946 32.2718 10.6639 29.6579 7.38123C26.9831 4.09858 23.2142 1.75818 18.351 0.360011L17.5303 2.27489C20.2658 3.18673 22.6063 4.34174 24.5515 5.7399C26.436 7.07728 27.6518 8.20189 28.1989 9.11374L29.0196 10.5727C28.4725 10.3295 27.7734 10.208 26.9223 10.208C25.0986 10.208 23.5485 10.8463 22.2719 12.1228ZM5.22037 12.1228C3.94378 13.3994 3.30549 14.9496 3.30549 16.7733C3.30549 18.597 3.94378 20.1775 5.22037 21.5149C6.49695 22.7914 8.04709 23.4297 9.87079 23.4297C11.6945 23.4297 13.275 22.7914 14.6124 21.5149C15.889 20.1775 16.5273 18.597 16.5273 16.7733C16.5273 13.7946 15.2203 10.6639 12.6063 7.38123C9.93158 4.09858 6.16261 1.75818 1.29943 0.360011L0.478763 2.27489C3.2143 3.18673 5.55471 4.34174 7.49998 5.7399C9.38447 7.07728 10.6003 8.20189 11.1474 9.11374L11.968 10.5727C11.4209 10.3295 10.7218 10.208 9.87079 10.208C8.04709 10.208 6.49695 10.8463 5.22037 12.1228Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+
+                    <h1 class="font-bold text-white md:text-[32px] text-[13px] md:px-10 px-5">Le téléphone portable, une
+                        malédiction ou une
+                        bénédiction ?</h1>
+                    <p class="text-white md:text-[27px] text-[11px] md:px-10 px-5">Des cours complets et détaillés,
+                        reconstruisant les concepts
+                        de
+                        base pour
+                        votre enfant, même s'il
+                        ne les a pas compris dans la section. Cours complets, cours complets et détaillés,
+                        reconstruction des concepts de base pour votre enfant, cours complets et Charnière,</p>
+                </div>
+
+            </div>
+            <div class="flex  w-full justify-center px-5 md:justify-end m-2">
+                <button class="bg-customGray w-full rounded-lg text-customPurple p-5 md:w-[200px] font-bold">Tous les
+                    articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#carousel1', {
+            classed: { pagination: 'splide__pagination is-active', },
+            type: 'loop',
+            perPage: 1,
+            rewind: true,
+            autoplay: true,
+            interval: 4000,
+            arrows: false,
+            padding: '20%',
+            pagination: false
+        }).mount();
+        new Splide('#carousel2', {
+            type: 'loop',
+            perPage: 3,
+            rewind: true,
+            autoplay: true,
+            interval: 4000,
+            arrows: true,
+            pagination: true,
+            width: '50%',
+            cloneStatus: true,
+            focus: 'center',
+        }).mount();
+        new Splide('#carousel3', {
+            type: 'loop',
+            perPage: 1,
+            rewind: true,
+            autoplay: true,
+            interval: 4000,
+            arrows: false,
+            pagination: false,
+            width: '100%',
+            cloneStatus: false,
+            focus: 'center',
+            padding: '20%',
+            fixedHeight: '40rem',
+            releaseWheel: true
+        }).mount();
+        new Splide('#carousel4', {
+            type: 'loop',
+            perPage: 1,
+            rewind: true,
+            autoplay: true,
+            interval: 3000,
+            arrows: false,
+            pagination: false,
+            cloneStatus: false,
+            fixedHeight: '20rem',
+            releaseWheel: true,
+            focus: 'center',
+            fixedHeight: '30rem',
+        }).mount();
+    });
 
 
 
 
+    $(document).ready(function () {
         $(document).ready(function () {
-            $(document).ready(function () {
-                $('.toggle-item').click(function () {
-                    $('#conditions').toggleClass('hidden');
-                    $('#confidentialite').toggleClass('hidden');
-                });
-            });
-            $(document).ready(function () {
-                $(".toggle-lang").click(function () {
-                    $(".languageDropdown").toggle();
-                });
-            });
-            // Toggle button click event
-            $('.toggle-button-toggled-menu').click(function (event) {
-                event.stopPropagation(); // Prevent click event from propagating to body
-                $('.nav-menu').toggleClass('hidden').fadeOut('slow', function () {
-                    // After fade effect completes, toggle the blur background class
-                    $('body').toggleClass('blur-background');
-                    $('.nav-menu').toggleClass('toggle-button-toggled-menu').fadeOut('slow')
-                    $('.toggle-button').toggleClass('toggle-button-toggled-menu').fadeIn('slow')
-
-                });
-
-
-            }); $('.toggle-button').click(function (event) {
-                event.stopPropagation(); // Prevent click event from propagating to body
-                $('.nav-menu').toggleClass('hidden').fadeIn('slow', function () {
-                    // After fade effect completes, toggle the blur background class
-                    $('body').toggleClass('blur-background');
-                    $('.nav-menu').toggleClass('toggle-button-toggled-menu').fadeIn('slow')
-                    $('.toggle-button').toggleClass('toggle-button-toggled-menu').fadeOut('slow')
-
-                });
-
-
-            });
-
-            // Click event handler for body
-            $('body').click(function (event) {
-                // Check if the clicked element is not part of the menu
-                if (!$(event.target).closest('.nav-menu').length && !$(event.target).hasClass('toggle-button')) {
-                    // If menu is open, close it and remove blur effect
-                    if (!$('.nav-menu').hasClass('hidden')) {
-                        $('.nav-menu').addClass('hidden').fadeOut('slow');
-                        $('body').removeClass('blur-background');
-                        $('.toggle-button').toggleClass('toggle-button-toggled-menu').fadeIn('slow')
-
-                    }
-                }
+            $('.toggle-item').click(function () {
+                $('#conditions').toggleClass('hidden');
+                $('#confidentialite').toggleClass('hidden');
             });
         });
+        $(document).ready(function () {
+            $(".toggle-lang").click(function () {
+                $(".languageDropdown").toggle();
+            });
+        });
+        // Toggle button click event
+        $('.toggle-button-toggled-menu').click(function (event) {
+            event.stopPropagation(); // Prevent click event from propagating to body
+            $('.nav-menu').toggleClass('hidden').fadeOut('slow', function () {
+                // After fade effect completes, toggle the blur background class
+                $('body').toggleClass('blur-background');
+                $('.nav-menu').toggleClass('toggle-button-toggled-menu').fadeOut('slow')
+                $('.toggle-button').toggleClass('toggle-button-toggled-menu').fadeIn('slow')
+
+            });
 
 
-    </script>
+        }); $('.toggle-button').click(function (event) {
+            event.stopPropagation(); // Prevent click event from propagating to body
+            $('.nav-menu').toggleClass('hidden').fadeIn('slow', function () {
+                // After fade effect completes, toggle the blur background class
+                $('body').toggleClass('blur-background');
+                $('.nav-menu').toggleClass('toggle-button-toggled-menu').fadeIn('slow')
+                $('.toggle-button').toggleClass('toggle-button-toggled-menu').fadeOut('slow')
 
-    <script>
-        tailwind.config = {
-            theme: {
-                borderRadius: {
-                    'large': '20px',
-                },
-                screens: {
-                    'sm': '360px',
-                    // => @media (min-width: 360px) { ... }
+            });
 
-                    'md': '834px',
-                    // => @media (min-width: 834px) { ... }
 
-                    'lg': '1440px',
-                    // => @media (min-width: 1440px) { ... }
-                },
-                extend: {
-                    colors: {
-                        primary: '#00148B',
-                        customBlue: '#01C1E3',
-                        customRed: '#FF2F2F',
-                        customPurple: '#483BC9',
-                        customGray: '#F5F5F5',
-                    },
+        });
+
+        // Click event handler for body
+        $('body').click(function (event) {
+            // Check if the clicked element is not part of the menu
+            if (!$(event.target).closest('.nav-menu').length && !$(event.target).hasClass('toggle-button')) {
+                // If menu is open, close it and remove blur effect
+                if (!$('.nav-menu').hasClass('hidden')) {
+                    $('.nav-menu').addClass('hidden').fadeOut('slow');
+                    $('body').removeClass('blur-background');
+                    $('.toggle-button').toggleClass('toggle-button-toggled-menu').fadeIn('slow')
 
                 }
             }
+        });
+    });
+
+
+</script>
+
+<script>
+    tailwind.config = {
+        theme: {
+            borderRadius: {
+                'large': '20px',
+            },
+            screens: {
+                'sm': '360px',
+                // => @media (min-width: 360px) { ... }
+
+                'md': '834px',
+                // => @media (min-width: 834px) { ... }
+
+                'lg': '1440px',
+                // => @media (min-width: 1440px) { ... }
+            },
+            extend: {
+                colors: {
+                    primary: '#00148B',
+                    customBlue: '#01C1E3',
+                    customRed: '#FF2F2F',
+                    customPurple: '#483BC9',
+                    customGray: '#F5F5F5',
+                },
+
+            }
         }
-    </script>
+    }
+</script>
 
 </html>

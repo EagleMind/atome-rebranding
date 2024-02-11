@@ -64,9 +64,7 @@ body, html {
 .scale.is-active {
  
   
-    div {
         transition: transform 400ms;
     transform: scale(1.1);
     border-radius: 15px;
-  }
 }
